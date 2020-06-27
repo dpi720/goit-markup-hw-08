@@ -1,0 +1,136 @@
+footer {
+  background: $footer-color;
+}
+.fotter-main {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 56px;
+}
+.fotter-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.19;
+  color: $white-color;
+}
+
+.fotter-addres {
+  display: flex;
+  flex-direction: column;
+  margin-right: 69px;
+
+  line-height: 1.71;
+  color: $white-color;
+  font-style: normal;
+}
+
+.street {
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.fotter-contacts {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail {
+  padding: 0px;
+  margin: 0px;
+}
+
+.join {
+  text-transform: uppercase;
+  color: $white-color;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+.footer-social {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 94px;
+}
+.social-ico {
+  fill: $white-color;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $white-color;
+    background: $blue-text-color;
+    border-radius: 50%;
+  }
+}
+
+.join-form {
+  margin-left: auto;
+  margin-bottom: 56px;
+}
+.form-input {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 20px;
+  padding: 0;
+  width: 358px;
+  height: 50px;
+
+  padding-left: 10px;
+
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $footer-color;
+  cursor: pointer;
+}
+.form-input::placeholder {
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.submit-botton {
+  position: relative;
+  padding: 0;
+  padding-left: 27px;
+
+  min-width: 200px;
+  height: 50px;
+
+  background: $blue-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: $blue-text-color;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: start;
+
+  cursor: pointer;
+}
+.icon-send {
+  position: absolute;
+  fill: $white-color;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 28px;
+  margin-left: 10px;
+}
+.copi {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.4);
+}

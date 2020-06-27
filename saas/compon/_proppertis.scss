@@ -1,0 +1,62 @@
+.properties-icon {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  content: "";
+
+  height: 120px;
+  width: 270px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: $properties-bg-color;
+}
+
+.properties-link {
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.properties-text {
+  line-height: 1.71;
+  color: $akcent-text-color;
+  margin-bottom: 0px;
+}
+.topic {
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.worck-box {
+  position: relative;
+}
+.worck-link {
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  bottom: 0;
+  width: 380px;
+
+  background: $background-image-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white-color;
+}

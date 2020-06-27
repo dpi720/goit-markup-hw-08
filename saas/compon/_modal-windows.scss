@@ -1,0 +1,210 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+
+  background: $white-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-color: $white-color;
+}
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form {
+  padding: 40px;
+}
+.form-title {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-field.terms {
+  display: flex;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+
+  padding: 0 0 0 42px;
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: $akcent-text-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-label.coment {
+  top: 12px;
+  left: 16px;
+}
+.modal-input.coment {
+  resize: none;
+  height: 120px;
+  padding: 0 0 0 16px;
+
+  cursor: pointer;
+}
+.icon-modal {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  margin-right: 8px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus + .form-label.form-label.coment,
+.modal-input:not(:placeholder-shown) + .form-label.form-label.coment {
+  transform: translateY(-35px);
+  color: $blue-text-color;
+}
+.modal-input:focus + .form-label,
+.modal-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-23px, -40px);
+  color: $blue-text-color;
+}
+.modal-input:focus ~ .icon-modal,
+.modal-input:not(:placeholder-shown) ~ .icon-modal {
+  fill: $blue-text-color;
+}
+.modal-input:focus,
+.modal-input:not(:placeholder-shown) {
+  border-color: $blue-text-color;
+  outline: none;
+}
+.terms-field {
+  width: 100%;
+  text-align: left;
+}
+.label-checkbox {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  align-items: center;
+  color: $akcent-text-color;
+  cursor: pointer;
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.input-checkbox:checked + .icon-checkbox {
+  background-color: $blue-text-color;
+  background-image: url(../img/check.svg);
+  background-size: cover;
+
+  border-radius: 2px;
+  border-color: $blue-text-color;
+}
+.icon-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 8px;
+
+  border: 2px solid $primary-text-color;
+  background-color: $white-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-terms {
+  display: block;
+  margin-left: 5px;
+  color: $blue-text-color;
+  text-decoration: underline;
+  text-align: right;
+}
+.button-submit {
+  min-width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  border-color: $blue-text-color;
+  background: $blue-text-color;
+  box-shadow: 0px 4px 4px $box-shadow-color;
+  border-radius: 4px;
+  border: 0;
+}

@@ -1,0 +1,43 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.clermargin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.downspace {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.autocenter {
+  text-align: center;
+}
+.grup-block {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  padding-left: 0px;
+}
+.grup-block .item + .item {
+  margin-left: 30px;
+}
